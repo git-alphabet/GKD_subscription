@@ -14,8 +14,7 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          matches:
-            '[vid="tv_main_splash_skip" || vid="tv_skip"][visibleToUser=true]',
+          matches: '[vid="tv_main_splash_skip" || vid="tv_skip"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/9a9b71b2-0c52-4623-b53b-6dd07d0cbe7c',
           snapshotUrls: [
             'https://i.gkd.li/i/17580273',
@@ -24,10 +23,9 @@ export default defineGkdApp({
         },
       ],
     },
-    // 这里是新添加的规则，key 不能重复，所以设为 1
     {
-      key: 1,
-      name: '首页-通知权限弹窗',
+      key: 4,
+      name: '权限提示-通知权限',
       desc: '自动点击关闭',
       fastQuery: true,
       matchTime: 10000,
