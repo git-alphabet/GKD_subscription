@@ -24,5 +24,22 @@ export default defineGkdApp({
         },
       ],
     },
+    // 这里是新添加的规则，key 不能重复，所以设为 1
+    {
+      key: 1,
+      name: '首页-通知权限弹窗',
+      desc: '自动点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.MobileTicket.ui.activity.MainActivity',
+          matches: 'ImageView[desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/24474930',
+        },
+      ],
+    },
   ],
 });
