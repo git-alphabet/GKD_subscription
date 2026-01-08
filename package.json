@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "gkd": {
+    "id": 123456,
+    "name": "我的自用订阅",
+    "author": "我",
     "outDir": "dist",
     "file": "AIsouler_gkd.json5",
     "versionFile": "AIsouler_gkd.version.json5",
