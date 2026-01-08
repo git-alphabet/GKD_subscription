@@ -311,5 +311,19 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 99,
+      name: '首页-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: '[vid="cancel"]',
+          snapshotUrls: 'https://i.gkd.li/snapshot/1767238121094',
+        },
+      ],
+    },
   ],
 });
