@@ -98,8 +98,17 @@ export default defineGkdApp({
             'https://i.gkd.li/i/20553947', // 避免误触 add [width<200]
           ],
         },
+
+        {
+          key: 7,
+          name: '首页-弹窗广告',
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: '[vid="cancel"]', // 确保 vid 选择器在你的版本能用，或者用 [id="cancel"]  自己写的
+          snapshotUrls: 'https://i.gkd.li/i/24494877',
+        },
       ],
     },
+    
     {
       key: 3,
       name: '评价提示-订单调查弹窗',
@@ -308,20 +317,6 @@ export default defineGkdApp({
             '@ImageView[clickable=true][visibleToUser=true] + [text="正在讲解"]',
           exampleUrls: 'https://e.gkd.li/42b1d2c5-ca75-4a89-adca-9e5c4f489165',
           snapshotUrls: 'https://i.gkd.li/i/17182888',
-        },
-      ],
-    },
-    {
-      key: 14,
-      name: '首页-弹窗广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: '[vid="cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/24494877',
         },
       ],
     },
