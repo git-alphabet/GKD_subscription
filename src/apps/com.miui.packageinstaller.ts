@@ -64,6 +64,13 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16487274',
           excludeSnapshotUrls: 'https://i.gkd.li/i/20282424',
         },
+        {
+          key: 2,
+          name: '勾选[已了解此应用未经安全检测]',
+          activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
+          matches: 'CheckBox[text="已了解此应用未经安全检测"][checked=false]',
+          snapshotUrls: 'https://i.gkd.li/i/24495026',
+        },
       ],
     },
     {
@@ -182,22 +189,6 @@ export default defineGkdApp({
             'https://i.gkd.li/i/18002712',
             'https://i.gkd.li/i/20746863',
           ],
-        },
-      ],
-    },
-    {
-      key: 18,
-      name: '功能类-自动勾选未检测提示',
-      desc: '自动勾选"已了解此应用未经安全检测"',
-      fastQuery: true,
-      actionMaximum: 1,
-      activityIds: 'com.miui.packageInstaller.NewInstallerPrepareActivity',
-      rules: [
-        {
-          // 匹配那个未被勾选的 CheckBox
-          matches: 'CheckBox[text="已了解此应用未经安全检测"][checked=false]',
-          // 填入你的快照链接，方便日后查证
-          snapshotUrls: 'https://i.gkd.li/i/24495026', 
         },
       ],
     },
