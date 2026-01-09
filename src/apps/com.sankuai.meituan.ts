@@ -312,7 +312,7 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 99,
+      key: 14,
       name: '首页-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
@@ -321,7 +321,7 @@ export default defineGkdApp({
         {
           activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
           matches: '[vid="cancel"]',
-          snapshotUrls: 'https://i.gkd.li/snapshot/1767238121094',
+          snapshotUrls: 'https://i.gkd.li/i/24494877',
         },
       ],
     },
