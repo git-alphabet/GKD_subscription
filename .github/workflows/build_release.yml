@@ -1,6 +1,9 @@
 name: build_release
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 19 * * *'
   workflow_dispatch:
